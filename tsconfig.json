@@ -1,4 +1,9 @@
 {
+  "scripts": {
+  "build": "prisma generate && next build",
+  "postinstall": "prisma generate"
+},
+
   "compilerOptions": {
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -12,7 +17,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    
     "incremental": true,
+    
     "plugins": [
       {
         "name": "next"

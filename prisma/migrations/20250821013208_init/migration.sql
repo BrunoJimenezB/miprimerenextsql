@@ -1,0 +1,6 @@
+-- CreateTable
+CREATE TABLE "user" (
+    "Cedula" TEXT NOT NULL PRIMARY KEY,
+    "Nombre" TEXT NOT NULL,
+    "FechaCreacion" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
